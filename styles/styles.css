@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.cabecalho {
+  width: 100vw;
+  min-height: 60px;
+  background-color: #000;
+  padding: 10px 20px;
+  position: fixed;
+}
+
+.cabecalho .logo {
+  width: 50px;
+  height: 50px;
+}
+
+.cabecalho .navegacao {
+  display: none;
+}
+
+.cabecalho .navegacao .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cabecalho .navegacao .menu a {
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+}
+
+.cabecalho .checkbox_hamburguer {
+  display: none;
+}
+
+.cabecalho .menu_hamburguer {
+  width: 44px;
+  cursor: pointer;
+  padding: 24px 10px;
+  background-color: #000;
+  float: right;
+}
+
+.cabecalho .menu_hamburguer .icone_menu_hamburguer {
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  position: relative;
+  float: right;
+}
+
+.cabecalho .menu_hamburguer .icone_menu_hamburguer::after,
+.cabecalho .menu_hamburguer .icone_menu_hamburguer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+}
+
+.cabecalho .menu_hamburguer .icone_menu_hamburguer::before {
+  top: -6px;
+}
+
+.cabecalho .menu_hamburguer .icone_menu_hamburguer::after {
+  top: 6px;
+}
+
+.cabecalho .checkbox_hamburguer:checked ~ .navegacao {
+  display: block;
+}
+
+.cabecalho
+  .checkbox_hamburguer:checked
+  ~ .menu_hamburguer
+  .icone_menu_hamburguer {
+  background-color: transparent;
+}
+
+.cabecalho
+  .checkbox_hamburguer:checked
+  ~ .menu_hamburguer
+  .icone_menu_hamburguer::before {
+
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.cabecalho
+  .checkbox_hamburguer:checked
+  ~ .menu_hamburguer
+  .icone_menu_hamburguer::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cabecalho .menu_hamburguer,
+  .cabecalho .checkbox_hamburguer {
+    display: none;
+  }
+
+  .cabecalho .navegacao {
+    display: block !important;
+  }
+
+  .cabecalho .navegacao .menu {
+    flex-direction: row;
+  }
+}
