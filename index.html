@@ -55,15 +55,18 @@
       }
     </script>
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
   <body>
-    <header>
-      <img src="assets/images/logo_site.svg" height="60" alt="Logo do site" />
+    <header class="cabecalho">
+      <img class="logo" src="assets/images/logo_site.svg" alt="Logo do site" loading="lazy"/>
 
-      <nav>
-        <ul>
+      <input type="checkbox" class="checkbox_hamburguer" name="checkbox_hamburguer" id="checkbox_hamburguer">
+      <label for="checkbox_hamburguer" class="menu_hamburguer" aria-label="Abrir menu de navegação"><span class="icone_menu_hamburguer"></span></label>
+      
+      <nav class="navegacao">
+        <ul class="menu">
           <li><a href="#inicio">Início</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#projetos">Projetos</a></li>
@@ -78,6 +81,7 @@
           src="assets/images/inicio/dhayana_desenho.png"
           height="200"
           alt="desenho da imagem de Dhayana"
+          loading="lazy"
         />
 
         <div>
@@ -97,54 +101,63 @@
             height="60"
             alt="Logo HTML5"
             title="HTML5"
+            loading="lazy"
           />
           <img
             src="assets/images/habilidades/logo_css.svg"
             height="60"
             alt="Logo CSS3"
             title="CSS3"
+            loading="lazy"
           />
           <img
             src="assets/images/habilidades/logo_javascript.svg"
             height="60"
             alt="Logo JavaScript"
             title="JavaScript"
+            loading="lazy"
           />
           <img
             src="assets/images/habilidades/logo_react.svg"
             height="60"
             alt="Logo React"
             title="React"
+            loading="lazy"
           />
           <img
             src="assets/images/habilidades/logo_react.svg"
             height="60"
             alt="Logo React Native"
             title="React Native"
+            loading="lazy"
           />
           <img
             src="assets/images/habilidades/logo_git.svg"
             height="60"
             alt="Logo Git"
             title="Git"
+            loading="lazy"
           />
           <img
             src="assets/images/habilidades/logo_node.svg"
             height="60"
             alt="Logo Node.js"
             title="Node.js"
+            loading="lazy"
           />
           <img
             src="assets/images/habilidades/logo_docker.svg"
             height="60"
             alt="Logo Docker"
             title="Docker"
+            loading="lazy"
           />
           <img
             src="assets/images/habilidades/logo_linux.svg"
             height="60"
             alt="Logo Linux"
             title="Linux"
+            loading="lazy"
           />
         </div>
       </section>
@@ -155,8 +168,9 @@
           <div>
             <img
               src="assets/images/projetos/pagina_toyota_brasil.gif"
-              alt="imagem projeto"
-              height="400"
+              alt="Página Toyota Brasil"
+              height="100"
+              loading="lazy"
             />
             <h3>Toyota</h3>
             <p>
@@ -171,8 +185,9 @@
           <div>
             <img
               src="assets/images/projetos/pagina_clone_github.gif"
-              alt="imagem projeto"
-              height="400"
+              alt="Página Clone GitHub"
+              height="100"
+              loading="lazy"
             />
             <h3>Clone GitHub</h3>
             <p>
@@ -188,8 +203,9 @@
           <div>
             <img
               src="assets/images/projetos/pagina_selfcare.gif"
-              alt="imagem projeto"
-              height="400"
+              alt="Página Selfcare"
+              height="100"
+              loading="lazy"
             />
             <h3>Selfcare</h3>
             <p>
@@ -205,8 +221,9 @@
           <div>
             <img
               src="assets/images/projetos/app_antecipa_tudo.jpg"
-              alt="imagem projeto"
-              height="400"
+              alt="Aplicativo Antecipa Tudo"
+              height="100"
+              loading="lazy"
             />
             <h3>Antecipa Tudo</h3>
             <p>
@@ -225,8 +242,9 @@
           <div>
             <img
               src="assets/images/projetos/app_herois_marvel.gif"
-              alt="imagem projeto"
-              height="400"
+              alt="Aplicativo Marvel Heroes"
+              height="100"
+              loading="lazy"
             />
             <h3>Marvel Heroes</h3>
             <p>
@@ -243,8 +261,9 @@
           <div>
             <img
               src="assets/images/projetos/app_buscador_github.gif"
-              alt="imagem projeto"
-              height="400"
+              alt="Aplicativo Buscador de Usuários Github"
+              height="100"
+              loading="lazy"
             />
             <h3>Buscador de Usuários Github</h3>
             <p>
