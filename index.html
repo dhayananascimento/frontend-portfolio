@@ -55,6 +55,8 @@
       }
     </script>
 
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
 
@@ -67,20 +69,20 @@
         loading="lazy"
       />
 
-      <input
-        type="checkbox"
-        class="checkbox_hamburguer"
-        name="checkbox_hamburguer"
-        id="checkbox_hamburguer"
-      />
-      <label
-        for="checkbox_hamburguer"
-        class="menu_hamburguer"
-        aria-label="Abrir menu de navegação"
-        ><span class="icone_menu_hamburguer"></span
-      ></label>
-
       <nav class="navegacao">
+        <input
+          type="checkbox"
+          class="checkbox_menu_hamburguer"
+          id="checkbox_menu_hamburguer"
+        />
+
+        <label
+          for="checkbox_menu_hamburguer"
+          class="menu_hamburguer"
+          aria-label="Menu de navegação"
+          ><span class="icone_menu_hamburguer"></span
+        ></label>
+
         <ul class="menu">
           <li><a href="#inicio">Início</a></li>
           <li><a href="#habilidades">Habilidades</a></li>
@@ -338,7 +340,7 @@
 
           <fieldset>
             <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" required ></textarea>
+            <textarea id="mensagem" required></textarea>
           </fieldset>
 
           <button type="submit">Enviar</button>
@@ -346,7 +348,7 @@
       </section>
     </main>
 
-    <footer class="rodape" >
+    <footer class="rodape">
       <p>&copy; 2025 Dhayana Nascimento Silva.</p>
     </footer>
   </body>

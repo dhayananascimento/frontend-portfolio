@@ -1,31 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
-
-fieldset {
-  border: none;
-}
-
-body {
-  background-color: #000;
-  color: #fff;
-}
-
 .cabecalho {
   width: 100vw;
   min-height: 60px;
   background-color: #000;
   padding: 10px 20px;
+
   position: fixed;
 }
 
@@ -34,85 +12,8 @@ body {
   height: 50px;
 }
 
-.cabecalho .navegacao {
-  display: none;
-}
 
-.cabecalho .navegacao .menu {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 
-.cabecalho .navegacao .menu a {
-  display: inline-block;
-  padding: 10px;
-  color: #fff;
-}
-
-.cabecalho .checkbox_hamburguer {
-  display: none;
-}
-
-.cabecalho .menu_hamburguer {
-  width: 44px;
-  cursor: pointer;
-  padding: 24px 10px;
-  background-color: #000;
-  float: right;
-}
-
-.cabecalho .menu_hamburguer .icone_menu_hamburguer {
-  width: 24px;
-  height: 2px;
-  background-color: #fff;
-  position: relative;
-  float: right;
-}
-
-.cabecalho .menu_hamburguer .icone_menu_hamburguer::after,
-.cabecalho .menu_hamburguer .icone_menu_hamburguer::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  position: absolute;
-}
-
-.cabecalho .menu_hamburguer .icone_menu_hamburguer::before {
-  top: -6px;
-}
-
-.cabecalho .menu_hamburguer .icone_menu_hamburguer::after {
-  top: 6px;
-}
-
-.cabecalho .checkbox_hamburguer:checked ~ .navegacao {
-  display: block;
-}
-
-.cabecalho
-  .checkbox_hamburguer:checked
-  ~ .menu_hamburguer
-  .icone_menu_hamburguer {
-  background-color: transparent;
-}
-
-.cabecalho
-  .checkbox_hamburguer:checked
-  ~ .menu_hamburguer
-  .icone_menu_hamburguer::before {
-  transform: rotate(-45deg);
-  top: 0;
-}
-
-.cabecalho
-  .checkbox_hamburguer:checked
-  ~ .menu_hamburguer
-  .icone_menu_hamburguer::after {
-  transform: rotate(45deg);
-  top: 0;
-}
 
 .principal {
   padding: 90px 20px 20px;
@@ -133,14 +34,8 @@ body {
   border-radius: 50%;
 }
 
-.habilidades,
-.projetos,
-.contato,
-.projetos .projetos_container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
+
+
 
 .habilidades .habilidades_container {
   display: flex;
@@ -148,8 +43,13 @@ body {
   gap: 20px;
 }
 
+
+
+
 .projetos .projetos_container {
-  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
 .projetos .projetos_container .projeto {
@@ -157,6 +57,9 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .projetos .projetos_container .projeto img {
@@ -175,32 +78,31 @@ body {
 
 .projetos .projetos_container .projeto .projeto_conteudo a {
   align-self: flex-end;
-  display: inline-block;
-  padding: 10px 20px;
   background-color: #000;
-  border-radius: 4px;
   color: #fff;
   min-width: 100px;
   text-align: center;
+  margin-top: 40px;
 }
 
 .projetos .mais_projetos {
-  margin: 0 auto;
-  display: inline-block;
-  padding: 10px 20px;
+  margin: 40px auto;
   background-color: #fff;
-  border-radius: 4px;
   color: #000;
 }
+
+
+
 
 .formulario_contato {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: rgba(255, 255, 255, 8);
+
   color: #000;
   border-radius: 8px;
   padding: 20px;
+  background-color: rgba(255, 255, 255, 8);
 }
 
 .formulario_contato fieldset {
@@ -227,11 +129,10 @@ body {
 .formulario_contato button {
   background-color: #000;
   color: #fff;
-  padding: 10px 20px;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
 }
+
+
+
 
 .rodape {
   padding: 60px 20px;
@@ -241,23 +142,13 @@ body {
   text-align: center;
 }
 
+
+
+
 @media (min-width: 768px) {
   .cabecalho {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .cabecalho .menu_hamburguer,
-  .cabecalho .checkbox_hamburguer {
-    display: none;
-  }
-
-  .cabecalho .navegacao {
-    display: block !important;
-  }
-
-  .cabecalho .navegacao .menu {
-    flex-direction: row;
   }
 }

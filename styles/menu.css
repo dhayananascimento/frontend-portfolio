@@ -1,0 +1,93 @@
+.navegacao {
+  position: relative;
+}
+
+.navegacao .menu {
+  display: none;
+}
+
+.navegacao .menu a {
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+}
+
+.navegacao .menu_hamburguer {
+  width: 44px;
+  padding: 24px 10px;
+  background-color: #000;
+
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+}
+
+.navegacao .menu_hamburguer .icone_menu_hamburguer {
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+
+  position: relative;
+  float: right;
+}
+
+.navegacao .menu_hamburguer .icone_menu_hamburguer::after,
+.navegacao .menu_hamburguer .icone_menu_hamburguer::before {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.navegacao .menu_hamburguer .icone_menu_hamburguer::before {
+  top: -6px;
+}
+
+.navegacao .menu_hamburguer .icone_menu_hamburguer::after {
+  top: 6px;
+}
+
+.navegacao .checkbox_menu_hamburguer {
+  display: none;
+}
+
+.navegacao .checkbox_menu_hamburguer:checked ~ .menu {
+  display: block;
+}
+
+.navegacao
+  .checkbox_menu_hamburguer:checked
+  ~ .menu_hamburguer
+  .icone_menu_hamburguer {
+  background-color: transparent;
+}
+
+.navegacao
+  .checkbox_menu_hamburguer:checked
+  ~ .menu_hamburguer
+  .icone_menu_hamburguer::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.navegacao
+  .checkbox_menu_hamburguer:checked
+  ~ .menu_hamburguer
+  .icone_menu_hamburguer::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .navegacao .menu {
+    display: flex !important;
+    gap: 10px;
+  }
+
+  .navegacao .menu_hamburguer {
+    display: none;
+  }
+}
