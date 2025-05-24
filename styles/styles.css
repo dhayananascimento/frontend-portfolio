@@ -12,6 +12,10 @@ ul {
   list-style: none;
 }
 
+fieldset {
+  border: none;
+}
+
 body {
   background-color: #000;
   color: #fff;
@@ -98,7 +102,6 @@ body {
   .checkbox_hamburguer:checked
   ~ .menu_hamburguer
   .icone_menu_hamburguer::before {
-
   transform: rotate(-45deg);
   top: 0;
 }
@@ -109,6 +112,133 @@ body {
   .icone_menu_hamburguer::after {
   transform: rotate(45deg);
   top: 0;
+}
+
+.principal {
+  padding: 90px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.principal .inicio {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.principal .inicio img {
+  align-self: center;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.habilidades,
+.projetos,
+.contato,
+.projetos .projetos_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.habilidades .habilidades_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projetos .projetos_container {
+  gap: 40px;
+}
+
+.projetos .projetos_container .projeto {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.projetos .projetos_container .projeto img {
+  width: 100%;
+  min-height: 300px;
+  object-fit: cover;
+  object-position: left top;
+  border-radius: 4px;
+}
+
+.projetos .projetos_container .projeto .projeto_conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.projetos .projetos_container .projeto .projeto_conteudo a {
+  align-self: flex-end;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  border-radius: 4px;
+  color: #fff;
+  min-width: 100px;
+  text-align: center;
+}
+
+.projetos .mais_projetos {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  color: #000;
+}
+
+.formulario_contato {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 8);
+  color: #000;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.formulario_contato fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario_contato fieldset input,
+.formulario_contato fieldset textarea {
+  border-radius: 4px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.formulario_contato fieldset input {
+  height: 40px;
+}
+
+.formulario_contato fieldset textarea {
+  min-height: 80px;
+}
+
+.formulario_contato button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.rodape {
+  padding: 60px 20px;
+}
+
+.rodape p {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
