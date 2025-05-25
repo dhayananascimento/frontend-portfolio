@@ -90,7 +90,7 @@
   color: #fff;
   min-width: 100px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: auto;
 }
 
 .principal .projetos .mais_projetos {
@@ -189,14 +189,15 @@
 
   .principal .projetos .projetos_container .projeto {
     max-width: 100%;
-  }
-
-  .principal .projetos .projetos_container .projeto:nth-child(odd) {
     flex-direction: row;
   }
 
   .principal .projetos .projetos_container .projeto:nth-child(even) {
     flex-direction: row-reverse;
+  }
+
+  .principal .projetos .projetos_container .projeto:nth-child(even) .projeto_conteudo a {
+    align-self: flex-start;
   }
 
   .principal .projetos .projetos_container .projeto img {
