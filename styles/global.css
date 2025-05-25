@@ -34,8 +34,49 @@ section {
   gap: 20px;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3,
+a,
+p {
+  font-size: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
 body {
   color: #fff;
   background-color: #000;
   font-family: Verdana, Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  a,
+  p {
+    font-size: 1rem;
+  }
+
+  section {
+    gap: 40px;
+  }
 }
