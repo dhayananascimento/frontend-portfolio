@@ -8,7 +8,7 @@ ul {
   list-style: none;
 }
 
-fieldset {
+.formulario_contato_campo {
   border: none;
 }
 
@@ -32,6 +32,22 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  position: relative;
+}
+
+section h2 {
+  position: relative;
+  padding-left: 10px;
+}
+
+section h2::before {
+  content: '';
+  width: 6px;
+  height: 100%;
+  background-color: #cd664e;
+  
+  position: absolute;
+  left:-4px;
 }
 
 h1 {

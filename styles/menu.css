@@ -12,6 +12,10 @@
   color: #fff;
 }
 
+.navegacao .menu li:last-child a {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
 .navegacao .menu_hamburguer {
   width: 44px;
   padding: 24px 10px;
