@@ -5,7 +5,7 @@
   padding: 10px 20px;
 
   position: fixed;
-  z-index: 1000;
+  z-index: 500;
 }
 
 .cabecalho .logo {
@@ -169,6 +169,45 @@
 
 .rodape p {
   text-align: center;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 600;
+  padding: 60px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal .modal_imagem {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 8px;
+}
+
+.modal .modal_fechar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 30px;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {

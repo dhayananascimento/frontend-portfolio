@@ -54,6 +54,7 @@
         ]
       }
     </script>
+    <script src="scripts/modal.js" defer></script>
 
     <link rel="stylesheet" href="styles/global.css" />
     <link rel="stylesheet" href="styles/menu.css" />
@@ -218,6 +219,7 @@
                 src="assets/images/projetos/pagina_toyota_brasil.gif"
                 alt="Página Toyota Brasil"
                 loading="lazy"
+                class="projeto_imagem"
               />
             </figure>
 
@@ -244,6 +246,7 @@
                 src="assets/images/projetos/pagina_clone_github.gif"
                 alt="Página Clone GitHub"
                 loading="lazy"
+                class="projeto_imagem"
               />
             </figure>
 
@@ -269,6 +272,7 @@
                 src="assets/images/projetos/pagina_selfcare.gif"
                 alt="Página Selfcare"
                 loading="lazy"
+                class="projeto_imagem"
               />
             </figure>
 
@@ -294,6 +298,7 @@
                 src="assets/images/projetos/app_antecipa_tudo.jpg"
                 alt="Aplicativo Antecipa Tudo"
                 loading="lazy"
+                class="projeto_imagem"
               />
             </figure>
 
@@ -321,6 +326,7 @@
                 src="assets/images/projetos/app_herois_marvel.gif"
                 alt="Aplicativo Marvel Heroes"
                 loading="lazy"
+                class="projeto_imagem"
               />
             </figure>
 
@@ -346,6 +352,7 @@
                 src="assets/images/projetos/app_buscador_github.gif"
                 alt="Aplicativo Buscador de Usuários Github"
                 loading="lazy"
+                class="projeto_imagem"
               />
             </figure>
 
@@ -402,5 +409,11 @@
     <footer class="rodape">
       <p>&copy; 2025 Dhayana Nascimento Silva.</p>
     </footer>
+
+    <div id="modal" class="modal">
+      <button id="modal_fechar" class="modal_fechar" aria-label="Fechar modal">&times;</button>
+
+      <img src="/" alt="Imagem aumentada" class="modal_imagem" id="modal_imagem"/>
+    </div>
   </body>
 </html>
