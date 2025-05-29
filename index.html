@@ -75,12 +75,13 @@
           type="checkbox"
           class="checkbox_menu_hamburguer"
           id="checkbox_menu_hamburguer"
-        />
-
-        <label
+          />
+          
+          <label
           for="checkbox_menu_hamburguer"
           class="menu_hamburguer"
           aria-label="Menu de navegação"
+          tabindex="0"
           ><span class="icone_menu_hamburguer"></span
         ></label>
 
@@ -411,9 +412,16 @@
     </footer>
 
     <div id="modal" class="modal">
-      <button id="modal_fechar" class="modal_fechar" aria-label="Fechar modal">&times;</button>
+      <button id="modal_fechar" class="modal_fechar" aria-label="Fechar modal">
+        &times;
+      </button>
 
-      <img src="/" alt="Imagem aumentada" class="modal_imagem" id="modal_imagem"/>
+      <img
+        src="/"
+        alt="Imagem aumentada"
+        class="modal_imagem"
+        id="modal_imagem"
+      />
     </div>
   </body>
 </html>
