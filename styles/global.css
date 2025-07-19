@@ -47,9 +47,9 @@ section h2::after {
   width: 60%;
   height: 4px;
   background-color: #cd664e;
-  
+
   position: absolute;
-  bottom:-4px;
+  bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -74,7 +74,7 @@ img {
 
 body {
   color: #fff;
-  background-color: #000;
+  background-color: #020202;
   font-family: Verdana, Arial, sans-serif;
 }
 
