@@ -17,7 +17,7 @@
   padding: 90px 20px;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 90px;
 }
 
 .principal .inicio {
@@ -38,11 +38,15 @@
 }
 
 .principal .inicio .apresentacao h1 {
-  color: #cd664e;
+  color: #fff;
+  text-align: center;
 }
 
 .principal .inicio .apresentacao p {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .principal .habilidades .habilidades_container {
@@ -224,15 +228,13 @@
   }
 
   .principal .inicio {
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 120px 0;
+    padding: 60px 0;
   }
 
-  .principal .inicio figure img {
-    width: 250px;
-    height: 250px;
+  .principal .inicio .apresentacao p {
+    font-size: 1.5rem;
   }
 
   .principal .habilidades .habilidades_container {
@@ -258,12 +260,7 @@
     flex-direction: row-reverse;
   }
 
-  .principal
-    .projetos
-    .projetos_container
-    .projeto:nth-child(even)
-    .projeto_conteudo
-    a {
+  .principal .projetos .projetos_container .projeto:nth-child(even) .projeto_conteudo a {
     align-self: flex-start;
   }
 

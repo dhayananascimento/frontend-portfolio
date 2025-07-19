@@ -13,7 +13,8 @@
 }
 
 .navegacao .menu li:last-child a {
-  border: 1px solid rgba(255, 255, 255, 1);
+  background-color: #cd664e;
+  color: #fff;
 }
 
 .navegacao .menu_hamburguer {
