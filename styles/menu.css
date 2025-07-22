@@ -9,12 +9,12 @@
 .navegacao .menu a {
   display: inline-block;
   padding: 10px;
-  color: #fff;
+  color: #f8f8f8;
 }
 
 .navegacao .menu li:last-child a {
   background-color: #cd664e;
-  color: #fff;
+  color: #f8f8f8;
 }
 
 .navegacao .menu_hamburguer {
@@ -31,7 +31,7 @@
 .navegacao .menu_hamburguer .icone_menu_hamburguer {
   width: 24px;
   height: 2px;
-  background-color: #fff;
+  background-color: #f8f8f8;
 
   position: relative;
   float: right;
@@ -44,7 +44,7 @@
 
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: #f8f8f8;
 }
 
 .navegacao .menu_hamburguer .icone_menu_hamburguer::before {

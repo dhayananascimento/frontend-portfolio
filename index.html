@@ -1,35 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
-    <title>Portfólio de Dhayana Nascimento | Desenvolvedora Full Stack</title>
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+  <title>Portfólio de Dhayana Nascimento | Desenvolvedora Full Stack</title>
 
-    <meta name="author" content="Dhayana Nascimento" />
-    <meta
-      name="description"
-      content="Desenvolvedora Full Stack, com foco em Front-end, entregando soluções completas com interfaces modernas, acessíveis e focadas no usuário."
-    />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Portfólio de Dhayana Nascimento | Desenvolvedora Full Stack"
-    />
-    <meta
-      property="og:description"
-      content="Desenvolvedora Full Stack, com foco em Front-end, entregando soluções completas com interfaces modernas, acessíveis e focadas no usuário."
-    />
-    <meta
-      property="og:image"
-      content="assets/images/inicio/dhayana_desenho.png"
-    />
-    <!-- <meta property="og:url" content="/" /> -->
-    <meta property="og:locale" content="pt_BR" />
+  <meta name="author" content="Dhayana Nascimento" />
+  <meta name="description"
+    content="Desenvolvedora Full Stack, com foco em Front-end, entregando soluções completas com interfaces modernas, acessíveis e focadas no usuário." />
 
-    <script type="application/ld+json">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Portfólio de Dhayana Nascimento | Desenvolvedora Full Stack" />
+  <meta property="og:description"
+    content="Desenvolvedora Full Stack, com foco em Front-end, entregando soluções completas com interfaces modernas, acessíveis e focadas no usuário." />
+  <meta property="og:image" content="assets/images/inicio/dhayana_desenho.png" />
+  <!-- <meta property="og:url" content="/" /> -->
+  <meta property="og:locale" content="pt_BR" />
+
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
@@ -54,376 +45,304 @@
         ]
       }
     </script>
-    <script src="scripts/modal.js" defer></script>
-    <script src="scripts/menu.js" defer></script>
-    <script src="scripts/formulario.js" defer></script>
+  <script src="scripts/modal.js" defer></script>
+  <script src="scripts/menu.js" defer></script>
+  <script src="scripts/formulario.js" defer></script>
 
-    <link rel="stylesheet" href="styles/global.css" />
-    <link rel="stylesheet" href="styles/menu.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
-  </head>
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/menu.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
 
-  <body>
-    <header class="cabecalho">
-      <img
-        class="logo"
-        src="assets/images/logo_site.svg"
-        alt="Logo do site"
-        loading="lazy"
-      />
+<body>
+  <header class="cabecalho">
+    <img class="logo" src="assets/images/logo_site.svg" alt="Logo do site" loading="lazy" />
 
-      <nav class="navegacao" id="navegacao">
-        <input
-          type="checkbox"
-          class="checkbox_menu_hamburguer"
-          id="checkbox_menu_hamburguer"
-        />
+    <nav class="navegacao" id="navegacao">
+      <input type="checkbox" class="checkbox_menu_hamburguer" id="checkbox_menu_hamburguer" />
 
-        <label
-          for="checkbox_menu_hamburguer"
-          class="menu_hamburguer"
-          id="menu_hamburguer"
-          aria-label="Menu de navegação"
-          ><span class="icone_menu_hamburguer"></span
-        ></label>
+      <label for="checkbox_menu_hamburguer" class="menu_hamburguer" id="menu_hamburguer"
+        aria-label="Menu de navegação"><span class="icone_menu_hamburguer"></span></label>
 
-        <ul class="menu">
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
+      <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main class="principal">
-      <section class="inicio" id="inicio">
-        <figure>
-          <img
-            src="assets/images/inicio/dhayana_desenho.png"
-            alt="Desenho da imagem de Dhayana"
-            loading="lazy"
-          />
+  <main class="principal">
+    <section class="inicio" id="inicio">
+      <figure>
+        <img src="assets/images/inicio/dhayana_desenho.png" alt="Desenho da imagem de Dhayana" loading="lazy" />
+      </figure>
+
+      <div class="apresentacao">
+        <h1>Dhayana Nascimento</h1>
+        <p>
+          Desenvolvedora Full Stack, com foco em <strong>Front-end</strong>,
+          entregando soluções completas com interfaces modernas, acessíveis e
+          focadas no usuário.
+        </p>
+      </div>
+    </section>
+
+    <section id="habilidades" class="habilidades">
+      <h2>Habilidades</h2>
+
+      <div class="habilidades_container">
+        <figure class="habilidade">
+          <img src="assets/images/habilidades/logo_html.svg" alt="Logo HTML5" title="HTML5" loading="lazy" />
+          <figcaption>HTML5</figcaption>
         </figure>
 
-        <div class="apresentacao">
-          <h1>Dhayana Nascimento</h1>
-          <p>
-            Desenvolvedora Full Stack, com foco em <strong>Front-end</strong>,
-            entregando soluções completas com interfaces modernas, acessíveis e
-            focadas no usuário.
-          </p>
-        </div>
-      </section>
+        <figure class="habilidade">
+          <img src="assets/images/habilidades/logo_css.svg" alt="Logo CSS3" title="CSS3" loading="lazy" />
+          <figcaption>CSS3</figcaption>
+        </figure>
 
-      <section id="habilidades" class="habilidades">
-        <h2>Habilidades</h2>
+        <figure class="habilidade">
+          <img src="assets/images/habilidades/logo_javascript.svg" alt="Logo JavaScript" title="JavaScript"
+            loading="lazy" />
+          <figcaption>JavaScript</figcaption>
+        </figure>
 
-        <div class="habilidades_container">
-          <figure class="habilidade">
-            <img
-              src="assets/images/habilidades/logo_html.svg"
-              alt="Logo HTML5"
-              title="HTML5"
-              loading="lazy"
-            />
-            <figcaption>HTML5</figcaption>
+        <figure class="habilidade">
+          <img src="assets/images/habilidades/logo_react.svg" alt="Logo React" title="React" loading="lazy" />
+          <figcaption>React</figcaption>
+        </figure>
+
+        <figure class="habilidade">
+          <img src="assets/images/habilidades/logo_react.svg" alt="Logo React Native" title="React Native"
+            loading="lazy" />
+          <figcaption>React Native</figcaption>
+        </figure>
+
+        <figure class="habilidade">
+          <img src="assets/images/habilidades/logo_git.svg" alt="Logo Git" title="Git" loading="lazy" />
+          <figcaption>Git</figcaption>
+        </figure>
+
+        <figure class="habilidade">
+          <img src="assets/images/habilidades/logo_node.svg" alt="Logo Node.js" title="Node.js" loading="lazy" />
+          <figcaption>Node.js</figcaption>
+        </figure>
+
+        <figure class="habilidade">
+          <img src="assets/images/habilidades/logo_docker.svg" alt="Logo Docker" title="Docker" loading="lazy" />
+          <figcaption>Docker</figcaption>
+        </figure>
+
+        <figure class="habilidade">
+          <img src="assets/images/habilidades/logo_linux.svg" alt="Logo Linux" title="Linux" loading="lazy" />
+          <figcaption>Linux</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+      <h2>Projetos</h2>
+      
+      <div class="projetos_container">
+        <div class="projeto">
+          <figure>
+            <img src="assets/images/projetos/pagina_toyota_brasil.gif" alt="Página Toyota Brasil" loading="lazy"
+              class="projeto_imagem" />
           </figure>
 
-          <figure class="habilidade">
-            <img
-              src="assets/images/habilidades/logo_css.svg"
-              alt="Logo CSS3"
-              title="CSS3"
-              loading="lazy"
-            />
-            <figcaption>CSS3</figcaption>
-          </figure>
+          <div class="projeto_conteudo">
+            <h3>Toyota</h3>
+            <p>
+              Desenvolvimento de site para Toyota do Brasil.
+            </p>
 
-          <figure class="habilidade">
-            <img
-              src="assets/images/habilidades/logo_javascript.svg"
-              alt="Logo JavaScript"
-              title="JavaScript"
-              loading="lazy"
-            />
-            <figcaption>JavaScript</figcaption>
-          </figure>
-
-          <figure class="habilidade">
-            <img
-              src="assets/images/habilidades/logo_react.svg"
-              alt="Logo React"
-              title="React"
-              loading="lazy"
-            />
-            <figcaption>React</figcaption>
-          </figure>
-
-          <figure class="habilidade">
-            <img
-              src="assets/images/habilidades/logo_react.svg"
-              alt="Logo React Native"
-              title="React Native"
-              loading="lazy"
-            />
-            <figcaption>React Native</figcaption>
-          </figure>
-
-          <figure class="habilidade">
-            <img
-              src="assets/images/habilidades/logo_git.svg"
-              alt="Logo Git"
-              title="Git"
-              loading="lazy"
-            />
-            <figcaption>Git</figcaption>
-          </figure>
-
-          <figure class="habilidade">
-            <img
-              src="assets/images/habilidades/logo_node.svg"
-              alt="Logo Node.js"
-              title="Node.js"
-              loading="lazy"
-            />
-            <figcaption>Node.js</figcaption>
-          </figure>
-
-          <figure class="habilidade">
-            <img
-              src="assets/images/habilidades/logo_docker.svg"
-              alt="Logo Docker"
-              title="Docker"
-              loading="lazy"
-            />
-            <figcaption>Docker</figcaption>
-          </figure>
-
-          <figure class="habilidade">
-            <img
-              src="assets/images/habilidades/logo_linux.svg"
-              alt="Logo Linux"
-              title="Linux"
-              loading="lazy"
-            />
-            <figcaption>Linux</figcaption>
-          </figure>
-        </div>
-      </section>
-
-      <section id="projetos" class="projetos">
-        <h2>Projetos</h2>
-
-        <div class="projetos_container">
-          <div class="projeto">
-            <figure>
-              <img
-                src="assets/images/projetos/pagina_toyota_brasil.gif"
-                alt="Página Toyota Brasil"
-                loading="lazy"
-                class="projeto_imagem"
-              />
-            </figure>
-
-            <div class="projeto_conteudo">
-              <h3>Toyota</h3>
-              <p>
-                Atuação na modernização e sustentação de sistemas para a Toyota,
-                com suporte às operações no Brasil, Argentina e Venezuela,
-                enquanto funcionária da empresa ON2.
-              </p>
-
-              <a
-                href="https://www.toyota.com.br/"
-                target="_blank"
-                rel="noopener"
-                >Site</a
-              >
-            </div>
+            <ul>
+              <li>React </li>
+              <li>Node.js </li>
+              <li>JavaScript </li>
+            </ul>
           </div>
 
-          <div class="projeto">
-            <figure>
-              <img
-                src="assets/images/projetos/pagina_clone_github.gif"
-                alt="Página Clone GitHub"
-                loading="lazy"
-                class="projeto_imagem"
-              />
-            </figure>
-
-            <div class="projeto_conteudo">
-              <h3>Clone GitHub</h3>
-              <p>
-                Clone da página de repositórios do GitHub (com pequenas
-                alterações).
-              </p>
-
-              <a
-                href="https://github.com/dhayananascimento/ReactJS-github"
-                target="_blank"
-                rel="noopener"
-                >Código</a
-              >
-            </div>
-          </div>
-
-          <div class="projeto">
-            <figure>
-              <img
-                src="assets/images/projetos/pagina_selfcare.gif"
-                alt="Página Selfcare"
-                loading="lazy"
-                class="projeto_imagem"
-              />
-            </figure>
-
-            <div class="projeto_conteudo">
-              <h3>Selfcare</h3>
-              <p>
-                Página para exibição de produtos de uma loja online chamada
-                selfcare.
-              </p>
-
-              <a
-                href="https://github.com/dhayananascimento/DevChallenge-selfcare"
-                target="_blank"
-                rel="noopener"
-                >Código</a
-              >
-            </div>
-          </div>
-
-          <div class="projeto">
-            <figure>
-              <img
-                src="assets/images/projetos/app_antecipa_tudo.jpg"
-                alt="Aplicativo Antecipa Tudo"
-                loading="lazy"
-                class="projeto_imagem"
-              />
-            </figure>
-
-            <div class="projeto_conteudo">
-              <h3>Antecipa Tudo</h3>
-              <p>
-                Participaçao na construção do aplicativo que permite que você
-                leia, revise e assine contratos de forma rápida e fácil,
-                diretamente do seu dispositivo móvel, enquanto funcionária da
-                empresa RBM Web.
-              </p>
-
-              <a
-                href="https://play.google.com/store/apps/details?id=com.rbmweb.antecipatudo.v2&hl=pt_BR"
-                target="_blank"
-                rel="noopener"
-                >Site</a
-              >
-            </div>
-          </div>
-
-          <div class="projeto">
-            <figure>
-              <img
-                src="assets/images/projetos/app_herois_marvel.gif"
-                alt="Aplicativo Marvel Heroes"
-                loading="lazy"
-                class="projeto_imagem"
-              />
-            </figure>
-
-            <div class="projeto_conteudo">
-              <h3>Marvel Heroes</h3>
-              <p>
-                App que lista os personagens da Marvel, com suas informações,
-                habilidades e filmes.
-              </p>
-
-              <a
-                href="https://github.com/dhayananascimento/DevChallenge-marvel_heroes"
-                target="_blank"
-                rel="noopener"
-                >Código</a
-              >
-            </div>
-          </div>
-
-          <div class="projeto">
-            <figure>
-              <img
-                src="assets/images/projetos/app_buscador_github.gif"
-                alt="Aplicativo Buscador de Usuários Github"
-                loading="lazy"
-                class="projeto_imagem"
-              />
-            </figure>
-
-            <div class="projeto_conteudo">
-              <h3>Buscador de Usuários Github</h3>
-              <p>
-                App que busca de usuários no Github e retorna algumas
-                informações de repositórios e outros.
-              </p>
-
-              <a
-                href="https://github.com/dhayananascimento/ReactNative-buscador_usuarios_github"
-                target="_blank"
-                rel="noopener"
-                >Código</a
-              >
-            </div>
+          <div class="projeto_botoes_container">
+            <button>Demo</button>
+            <a href="https://www.toyota.com.br/" target="_blank" rel="noopener">Site</a>
           </div>
         </div>
 
-        <a
-          href="https://github.com/dhayananascimento?tab=repositories"
-          class="mais_projetos"
-          target="_blank"
-          rel="noopener"
-          >Ver mais</a
-        >
-      </section>
+        <div class="projeto">
+          <figure>
+            <img src="assets/images/projetos/pagina_clone_github.gif" alt="Página Clone GitHub" loading="lazy"
+              class="projeto_imagem" />
+          </figure>
 
-      <section id="contato" class="contato">
-        <h2>Contato</h2>
+          <div class="projeto_conteudo">
+            <h3>Clone GitHub</h3>
+            <p>
+              Clone da página de repositórios do GitHub (com pequenas
+              alterações).
+            </p>
 
-        <form method="post" class="formulario_contato" id="formulario_contato">
-          <div class="formulario_contato_campo">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" required />
+            <ul>
+              <li>TypeScript</li>
+              <li>React </li>
+              <li>Styled Components </li>
+            </ul>
           </div>
 
-          <div class="formulario_contato_campo">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" required />
+          <div class="projeto_botoes_container">
+            <button>Demo</button>
+            <a href="https://github.com/dhayananascimento/ReactJS-github" target="_blank" rel="noopener">Código</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <figure>
+            <img src="assets/images/projetos/pagina_selfcare.gif" alt="Página Selfcare" loading="lazy"
+              class="projeto_imagem" />
+          </figure>
+
+          <div class="projeto_conteudo">
+            <h3>Selfcare</h3>
+            <p>
+              Página para exibição de produtos de uma loja online chamada
+              selfcare.
+            </p>
+
+            <ul>
+              <li>HTML </li>
+              <li>CSS </li>
+            </ul>
           </div>
 
-          <div class="formulario_contato_campo">
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" required></textarea>
+          <div class="projeto_botoes_container">
+            <button>Demo</button>
+            <a href="https://github.com/dhayananascimento/DevChallenge-selfcare" target="_blank"
+              rel="noopener">Código</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <figure>
+            <img src="assets/images/projetos/app_antecipa_tudo.jpg" alt="Aplicativo Antecipa Tudo" loading="lazy"
+              class="projeto_imagem" />
+          </figure>
+
+          <div class="projeto_conteudo">
+            <h3>Antecipa Tudo</h3>
+            <p>
+              Participaçao na construção do aplicativo que permite que você
+              leia, revise e assine contratos de forma rápida e fácil,
+              diretamente do seu dispositivo móvel, enquanto funcionária da
+              empresa RBM Web.
+            </p>
+
+            <ul>
+              <li>React Native </li>
+              <li>JavaScript </li>
+            </ul>
           </div>
 
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-    </main>
+          <div class="projeto_botoes_container">
+            <button>Demo</button>
+            <a href="https://play.google.com/store/apps/details?id=com.rbmweb.antecipatudo.v2&hl=pt_BR" target="_blank"
+              rel="noopener">Site</a>
+          </div>
+        </div>
 
-    <footer class="rodape">
-      <p>&copy; 2025 Dhayana Nascimento Silva.</p>
-    </footer>
+        <div class="projeto">
+          <figure>
+            <img src="assets/images/projetos/app_herois_marvel.gif" alt="Aplicativo Marvel Heroes" loading="lazy"
+              class="projeto_imagem" />
+          </figure>
 
-    <div id="modal" class="modal">
-      <button id="modal_fechar" class="modal_fechar" aria-label="Fechar modal">
-        &times;
-      </button>
+          <div class="projeto_conteudo">
+            <h3>Marvel Heroes</h3>
+            <p>
+              App que lista os personagens da Marvel, com suas informações,
+              habilidades e filmes.
+            </p>
 
-      <img
-        src="/"
-        alt="Imagem aumentada"
-        class="modal_imagem"
-        id="modal_imagem"
-      />
-    </div>
-  </body>
+            <ul>
+              <li>React Native </li>
+              <li>JavaScript </li>
+            </ul>
+          </div>
+
+          <div class="projeto_botoes_container">
+            <button>Demo</button>
+            <a href="https://github.com/dhayananascimento/DevChallenge-marvel_heroes" target="_blank"
+              rel="noopener">Código</a>
+          </div>
+        </div>
+
+        <div class="projeto">
+          <figure>
+            <img src="assets/images/projetos/app_buscador_github.gif" alt="Aplicativo Buscador de Usuários Github"
+              loading="lazy" class="projeto_imagem" />
+          </figure>
+
+          <div class="projeto_conteudo">
+            <h3>Buscador de Usuários Github</h3>
+            <p>
+              App que busca de usuários no Github e retorna algumas
+              informações de repositórios e outros.
+            </p>
+
+            <ul>
+              <li>React Native </li>
+              <li>JavaScript </li>
+            </ul>
+          </div>
+
+          <div class="projeto_botoes_container">
+            <button>Demo</button>
+            <a href="https://github.com/dhayananascimento/ReactNative-buscador_usuarios_github" target="_blank"
+              rel="noopener">Código</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://github.com/dhayananascimento?tab=repositories" class="mais_projetos" target="_blank"
+        rel="noopener">Ver mais</a>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2>Contato</h2>
+
+      <form method="post" class="formulario_contato" id="formulario_contato">
+        <div class="formulario_contato_campo">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" required />
+        </div>
+
+        <div class="formulario_contato_campo">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="formulario_contato_campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" required></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2025 Dhayana Nascimento Silva.</p>
+  </footer>
+
+  <div id="modal" class="modal">
+    <button id="modal_fechar" class="modal_fechar" aria-label="Fechar modal">
+      &times;
+    </button>
+
+    <img src="/" alt="Imagem aumentada" class="modal_imagem" id="modal_imagem" />
+  </div>
+</body>
+
 </html>

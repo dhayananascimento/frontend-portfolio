@@ -49,7 +49,7 @@ section h2::after {
   background-color: #cd664e;
 
   position: absolute;
-  bottom: -4px;
+  bottom: -8px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -64,6 +64,7 @@ h2 {
 
 h3,
 a,
+button,
 p {
   font-size: 1rem;
 }
@@ -73,7 +74,7 @@ img {
 }
 
 body {
-  color: #fff;
+  color: #f8f8f8;
   background-color: #020202;
   font-family: Verdana, Arial, sans-serif;
 }
