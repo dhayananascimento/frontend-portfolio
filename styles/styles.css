@@ -266,11 +266,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: initial;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
   }
 
   .principal .projetos .projetos_container .projeto {
-    max-width: 400px;
+    max-width: 300px;
   }
 
   .principal .projetos .projetos_container .projeto .projeto_conteudo {
