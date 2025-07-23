@@ -1,35 +1,35 @@
-const imagensProjeto = document.querySelectorAll(".projeto_imagem");
-let cardSelecionado = null;
+const demoProjetos = document.querySelectorAll(".demo");
+let itemSelecionado = null;
 
 const modal = document.getElementById("modal");
 const fechaModal = document.getElementById("modal_fechar");
 
-function abrirModal(imagem) {
+function abrirModal(demoButton) {
   const imagemModal = document.getElementById("modal_imagem");
 
-  modal.style.display = "flex";
-  imagemModal.src = imagem.src;
-  imagemModal.alt = imagem.alt;
+  imagemModal.src = demoButton.dataset.demoSrc;
+  imagemModal.alt = demoButton.dataset.demoAlt;
 
+  modal.style.display = "flex";
+  
   fechaModal.focus();
-  cardSelecionado = imagem;
+  itemSelecionado = demoButton;
 }
 
 function fecharModal() {
   modal.style.display = "none";
-  cardSelecionado.focus();
+  const imagemModal = document.getElementById("modal_imagem");
+  imagemModal.src = "";
+  itemSelecionado.focus();
 }
 
-imagensProjeto.forEach((imagem) => {
-  imagem.tabIndex = 0;
-  imagem.role = "button";
+demoProjetos.forEach((demoButton) => {
+  demoButton.addEventListener("click", () => abrirModal(demoButton));
 
-  imagem.addEventListener("click", () => abrirModal(imagem));
-
-  imagem.addEventListener("keydown", (event) => {
+  demoButton.addEventListener("keydown", (event) => {
     if (event.key === "Enter" || event.key === " ") {
       event.preventDefault();
-      abrirModal(imagem);
+      abrirModal(demoButton);
     }
   });
 });
