@@ -49,6 +49,9 @@
   margin: 0 auto;
   text-align: center;
 }
+.principal .inicio .apresentacao p strong {
+  color: #6E3D94;
+}
 
 .principal .habilidades .habilidades_container {
   display: flex;
@@ -192,7 +195,7 @@
 }
 
 .principal .contato .formulario_contato button {
-  background-color: #cd664e;
+  background-color: #6E3D94;
   color: #f8f8f8;
 }
 
