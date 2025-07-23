@@ -294,4 +294,12 @@
   .principal .projetos .projetos_container .projeto .projeto_conteudo {
     max-width: 600px;
   }
+
+  .principal .projetos .projetos_container .projeto .projeto_conteudo p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+  }
 }
