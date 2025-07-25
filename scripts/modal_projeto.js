@@ -1,4 +1,4 @@
-const demoProjetos = document.querySelectorAll(".demo");
+const demoProjetos = document.querySelectorAll(".demo_projeto");
 let itemSelecionado = null;
 
 const modal = document.getElementById("modal");

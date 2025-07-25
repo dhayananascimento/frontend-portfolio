@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(function () {
     const texto = "Dhayana Nascimento";
-    const elemento = document.querySelector(".apresentacao h1");
+    const elemento = document.querySelector(".apresentacao_pessoal h1");
 
     let indice = 0;
     elemento.textContent = "D";

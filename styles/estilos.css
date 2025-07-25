@@ -9,7 +9,7 @@
   z-index: 500;
 }
 
-.cabecalho .logo {
+.cabecalho .logo_site {
   width: 50px;
   height: 50px;
 }
@@ -38,19 +38,19 @@
   border-radius: 50%;
 }
 
-.principal .inicio .apresentacao h1 {
+.principal .inicio .apresentacao_pessoal h1 {
   color: #f8f8f8;
   text-align: center;
 }
 
-.principal .inicio .apresentacao p {
+.principal .inicio .apresentacao_pessoal p {
   color: #8f8f8f;
   width: 80%;
   margin: 0 auto;
   text-align: center;
 }
 
-.principal .inicio .apresentacao p strong {
+.principal .inicio .apresentacao_pessoal p strong {
   color: #6E3D94;
 }
 
@@ -267,7 +267,7 @@
     padding: 60px 0;
   }
 
-  .principal .inicio .apresentacao p {
+  .principal .inicio .apresentacao_pessoal p {
     font-size: 1.5rem;
     line-height: 2rem;
   }
