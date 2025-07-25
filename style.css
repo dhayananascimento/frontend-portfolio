@@ -1,0 +1,22 @@
+/* Força o outline a ser visível quando navegando com teclado */
+.force-focus-visible {
+  outline: 2px solid #4A90E2 !important;
+  outline-offset: 2px !important;
+}
+
+/* Garante que o botão de fechar sempre mostre o outline quando focado via teclado */
+#modal_fechar:focus-visible {
+  outline: 2px solid #4A90E2;
+  outline-offset: 2px;
+}
+
+/* Fallback para navegadores que não suportam :focus-visible */
+#modal_fechar:focus {
+  outline: 2px solid #4A90E2;
+  outline-offset: 2px;
+}
+
+/* Remove o outline quando o foco é via mouse (para navegadores que suportam :focus-visible) */
+#modal_fechar:focus:not(:focus-visible) {
+  outline: none;
+}
