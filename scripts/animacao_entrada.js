@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const seletores = [
-    "h1", "h2", "h3", "p", "img",
+    "h2", "h3", "p", "img",
     ".habilidade", ".projeto", ".contato"
   ];
   const elementos = document.querySelectorAll(seletores.join(", "));
