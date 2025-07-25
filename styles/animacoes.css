@@ -11,10 +11,22 @@ h1[data-elemento-visivel], h2[data-elemento-visivel], h3[data-elemento-visivel],
   transform: none;
 }
 
+
+.habilidade,
+.projeto {
+  transition: transform 0.4s ease-in-out;
+}
+
+.projeto:hover, 
+.habilidade:hover {
+  transform: translateY(-10px);
+}
+
+
 .projeto_botoes_container button,
 .projeto_botoes_container a,
 button[type="submit"] {
-  transition: opacity 0.4s;
+  transition: opacity 0.4s ease-in-out;
 }
 .projeto_botoes_container button:hover,
 .projeto_botoes_container a:hover,
