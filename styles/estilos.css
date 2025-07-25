@@ -51,7 +51,7 @@
 }
 
 .principal .inicio .apresentacao_pessoal p strong {
-  color: #6E3D94;
+  border-bottom: 3px solid #6E3D94;
 }
 
 .principal .habilidades .habilidades_container {
@@ -241,7 +241,7 @@
   background-color: transparent;
   color: #f8f8f8;
   font-size: 30px;
-  padding: 10px;
+  margin: 10px;
 
   display: flex;
   align-items: center;
