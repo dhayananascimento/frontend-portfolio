@@ -49,6 +49,7 @@
   margin: 0 auto;
   text-align: center;
 }
+
 .principal .inicio .apresentacao p strong {
   color: #6E3D94;
 }
@@ -268,6 +269,7 @@
 
   .principal .inicio .apresentacao p {
     font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .principal .habilidades .habilidades_container {
