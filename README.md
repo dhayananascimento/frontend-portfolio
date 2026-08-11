@@ -1,10 +1,10 @@
 # Portfólio
-Portfólio criado para testes relacionado a acessibilidade. A aplicação permite que o usuário encontra algumas informações sobre minha trajetoria profissional, alem de meios de contato.
+Portfólio criado para testes relacionados a acessibilidade. A aplicação permite que o usuário encontre algumas informações sobre minha trajetória profissional, além de meios de contato.
 
 ## Acessibilidade
 Desenvolvi a aplicação considerando diferentes formas de navegação e interação, buscando tornar o conteúdo mais acessível para diferentes usuários.
 
-Utilizei HTML semântico, textos alternativos (`alt`) nas imagens, `label` nos campos do formulário e atributos `aria-label` quando necessários. Também implementei navegação por teclado no menu e nos botões de demonstração dos projetos.
+Utilizei HTML semântico, textos alternativos (`alt`) nas imagens, `label` nos campos do formulário e atributos `aria-label` quando necessário. Também implementei navegação por teclado no menu e nos botões de demonstração dos projetos.
 
 O modal dos projetos possui gerenciamento de foco: ao ser aberto, o foco é direcionado para o botão de fechamento e, ao ser fechado, retorna para o elemento que iniciou a interação. Também é possível fechar o modal utilizando a tecla `Esc`.
 
@@ -37,7 +37,6 @@ https://dhayananascimento.github.io/frontend-portfolio/
 **Para executar este projeto na sua máquina, siga as instruções abaixo**
 
 Rode os seguintes comandos no seu terminal para clonar o projeto:
-
 ```
 $ git clone https://github.com/dhayananascimento/frontend-portfolio.git
 $ cd frontend-portfolio
